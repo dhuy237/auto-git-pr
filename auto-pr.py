@@ -29,7 +29,7 @@ def commit_files():
         if repo.index.diff(None) or repo.untracked_files:
 
             repo.git.add(A=True)
-            repo.git.commit(m='auto commit at {dtime}')
+            repo.git.commit(m='auto commit at {}'.format(dtime))
             repo.git.push('--set-upstream', 'origin', current)
             print('git push')
         else:
