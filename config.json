@@ -1,5 +1,6 @@
 {
     "name": "test-pr",
     "info_1": "123",
-    "info_2": "abc"
+    "info_2": "abc",
+    "info_3": "aaa"
 }
