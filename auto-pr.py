@@ -2,7 +2,7 @@ import os
 from time import *
 from os import path
 from git import Repo
-from git_credentials import GIT_TOKEN
+from git_credentials.key import GIT_TOKEN
 import requests
 import json
 
@@ -68,6 +68,6 @@ def create_pull_request(
 
 response = create_pull_request(
     title="Test Auto-PR",
-    data="This is an automatically created PR."
+    body="This is an automatically created PR."
 )
 print(response)
